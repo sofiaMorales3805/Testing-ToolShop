@@ -92,10 +92,15 @@
 
 ![EV-SM-06 - API y Swagger](evidencias/EV-SM-06_api_swagger.png)
 
-
 ## 3. Resumen y Criterios de Aprobación
-* **Total de Pruebas:** 6
+
+* **Total de pruebas:** 6
 * **Aprobadas (Pass):** 5
-* **Fallidas (Fail):** 1
-* **Bloqueadas / Pendientes:** 0
-* **Decisión Final:** **Aprobado para pruebas funcionales** 
+* **Fallidas (Fail):** 0
+* **Bloqueadas:** 0
+* **Pendientes:** 0
+* **Decisión final:** **APROBADO**
+
+### Conclusión
+
+La versión Sprint 5 with bugs superó las pruebas de humo. Los servicios de Docker se encontraron activos y fue posible acceder al catálogo, navegar por los productos, iniciar sesión, agregar productos al carrito y consultar la API. Por lo tanto, el entorno se considera estable para continuar con las pruebas funcionales detalladas.
