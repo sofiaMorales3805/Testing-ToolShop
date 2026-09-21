@@ -15,10 +15,10 @@
 |---|---|---|---|---|---|---|
 | SM-01 | Infraestructura | Ejecutar `docker compose ps`. | Los servicios aparecen en estado `Up`. | Los contenedores requeridos estaban activos. | Pass | [EV-SM-01](#evidencia-sm-01) |
 | SM-02 | Catálogo | Abrir la página principal. | Se muestra el catálogo. | La página cargó y mostró los productos. | Pass | [EV-SM-02](#evidencia-sm-02) |
-| SM-03 | Navegación | Abrir una categoría y un producto. | Las vistas cargan sin errores. | [Completar] | Ppass | [EV-SM-03](#evidencia-sm-03) |
-| SM-04 | Autenticación | Iniciar sesión con datos válidos. | El usuario queda autenticado. | [Completar] | Pass | [EV-SM-04](#evidencia-sm-04) |
-| SM-05 | Carrito | Agregar un producto. | El producto aparece en el carrito. | [Completar] | Parcial | [EV-SM-05](#evidencia-sm-05) |
-| SM-06 | API | Abrir Swagger y consultar la API. | Swagger y la API responden. | [Completar] | Pass | [EV-SM-06](#evidencia-sm-06) |
+| SM-03 | Navegación | Abrir una categoría y un producto. | Las vistas cargan sin errores. | La Página abrio la pestaña con los productos | Pass | [EV-SM-03](#evidencia-sm-03) |
+| SM-04 | Autenticación | Iniciar sesión con datos válidos. | El usuario queda autenticado. | El usuario se autenticó adecuadamente | Pass | [EV-SM-04](#evidencia-sm-04) |
+| SM-05 | Carrito | Agregar un producto. | El producto aparece en el carrito. | Se agrega el producto al carrito | Parcial | [EV-SM-05](#evidencia-sm-05) |
+| SM-06 | API | Abrir Swagger y consultar la API. | Swagger y la API responden. | Se muestra el API  | Pass | [EV-SM-06](#evidencia-sm-06) |
 ---
 ### Evidencia SM-01
 
