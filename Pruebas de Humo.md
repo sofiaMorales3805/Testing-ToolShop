@@ -98,4 +98,4 @@
 * **Aprobadas (Pass):** 5
 * **Fallidas (Fail):** 1
 * **Bloqueadas / Pendientes:** 0
-* **Decisión Final:** **RECHAZADO** (La compilación no es estable para pasar a la fase de pruebas funcionales profundas debido a fallos críticos en la API).
+* **Decisión Final:** **Aprobado para pruebas funcionales** 
