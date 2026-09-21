@@ -1,12 +1,11 @@
 # Pruebas de Humo (Smoke Test)
 
 ## 1. Información General
-* **Nombre del Proyecto:** [Nombre del sistema o aplicación]
-* **Versión / Build:** [Número de compilación o versión a probar]
-* **Fecha de Ejecución:** [DD/MM/AAAA]
-* **Responsable / QA:** [Nombre del evaluador]
-* **Entorno:** [Desarrollo / QA / Staging / Producción]
-* **Estado de la Compilación:** [Aprobado / Rechazado]
+* **Nombre del Proyecto:** Plan de pruebas -- Toolshop
+* **Versión / Build:** Versión 1.0
+* **Fecha de Ejecución:** 14/09/2026
+* **Responsable / QA:** Jenny Sofía Morales López
+* **Entorno:** Entorno de QA
 
 ---
 
