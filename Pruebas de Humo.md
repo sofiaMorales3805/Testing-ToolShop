@@ -15,10 +15,10 @@
 |---|---|---|---|---|---|---|
 | SM-01 | Infraestructura | Ejecutar `docker compose ps`. | Los servicios aparecen en estado `Up`. | Los contenedores requeridos estaban activos. | Pass | [EV-SM-01](#evidencia-sm-01) |
 | SM-02 | Catálogo | Abrir la página principal. | Se muestra el catálogo. | La página cargó y mostró los productos. | Pass | [EV-SM-02](#evidencia-sm-02) |
-| SM-03 | Navegación | Abrir una categoría y un producto. | Las vistas cargan sin errores. | [Completar] | Pendiente | [EV-SM-03](#evidencia-sm-03) |
-| SM-04 | Autenticación | Iniciar sesión con datos válidos. | El usuario queda autenticado. | [Completar] | Pendiente | [EV-SM-04](#evidencia-sm-04) |
-| SM-05 | Carrito | Agregar un producto. | El producto aparece en el carrito. | [Completar] | Pendiente | [EV-SM-05](#evidencia-sm-05) |
-| SM-06 | API | Abrir Swagger y consultar la API. | Swagger y la API responden. | [Completar] | Pendiente | [EV-SM-06](#evidencia-sm-06) |
+| SM-03 | Navegación | Abrir una categoría y un producto. | Las vistas cargan sin errores. | [Completar] | Ppass | [EV-SM-03](#evidencia-sm-03) |
+| SM-04 | Autenticación | Iniciar sesión con datos válidos. | El usuario queda autenticado. | [Completar] | Pass | [EV-SM-04](#evidencia-sm-04) |
+| SM-05 | Carrito | Agregar un producto. | El producto aparece en el carrito. | [Completar] | Parcial | [EV-SM-05](#evidencia-sm-05) |
+| SM-06 | API | Abrir Swagger y consultar la API. | Swagger y la API responden. | [Completar] | Pass | [EV-SM-06](#evidencia-sm-06) |
 ---
 ### Evidencia SM-01
 
@@ -94,8 +94,8 @@
 
 
 ## 3. Resumen y Criterios de Aprobación
-* **Total de Pruebas:** 4
-* **Aprobadas (Pass):** 2
+* **Total de Pruebas:** 6
+* **Aprobadas (Pass):** 5
 * **Fallidas (Fail):** 1
-* **Bloqueadas / Pendientes:** 1
+* **Bloqueadas / Pendientes:** 0
 * **Decisión Final:** **RECHAZADO** (La compilación no es estable para pasar a la fase de pruebas funcionales profundas debido a fallos críticos en la API).
