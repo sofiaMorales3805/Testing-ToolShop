@@ -1,0 +1,30 @@
+PS C:\QA\Proyecto2\practice-software-testing\sprint5-with-bugs\UI> npx ng test --code-coverage --browsers=FirefoxHeadless --watch=false
+node.exe : [1m[33mWorkspace extension with invalid name (defaultProject) found.[39m[22m
+En C:\Users\Jenny\AppData\Roaming\npm\npx.ps1: 24 Carácter: 5
++     & "node$exe"  "$basedir/node_modules/npm/bin/npx-cli.js" $args
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([1m[33mWorksp...ound.[39m[22m:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+- Generating browser application bundles (phase: setup)...
+âˆš Browser application bundle generation complete.
+Firefox 142.0 (Windows 10): Executed 0 of 6[32m SUCCESS[39m (0 secs / 0 secs)
+[1A[2KFirefox 142.0 (Windows 10): Executed 1 of 6[32m SUCCESS[39m (0 secs / 0.245 secs)
+[1A[2KFirefox 142.0 (Windows 10): Executed 2 of 6[32m SUCCESS[39m (0 secs / 0.263 secs)
+[1A[2KFirefox 142.0 (Windows 10): Executed 3 of 6[32m SUCCESS[39m (0 secs / 0.28 secs)
+[1A[2KFirefox 142.0 (Windows 10): Executed 4 of 6[32m SUCCESS[39m (0 secs / 0.297 secs)
+[1A[2KFirefox 142.0 (Windows 10): Executed 5 of 6[32m SUCCESS[39m (0 secs / 0.31 secs)
+[1A[2KFirefox 142.0 (Windows 10): Executed 6 of 6[32m SUCCESS[39m (0 secs / 0.329 secs)
+[1A[2KFirefox 142.0 (Windows 10): Executed 6 of 6[32m SUCCESS[39m (0.346 secs / 0.329 secs)
+[32mTOTAL: 6 SUCCESS[39m
+âˆš Browser application bundle generation complete.
+
+=============================== Coverage summary ===============================
+Statements   : 17.62% ( 40/227 )
+Branches     : 17.07% ( 7/41 )
+Functions    : 5% ( 4/80 )
+Lines        : 16.03% ( 34/212 )
+================================================================================
+âˆš Browser application bundle generation complete.
+
+PS C:\QA\Proyecto2\practice-software-testing\sprint5-with-bugs\UI> 

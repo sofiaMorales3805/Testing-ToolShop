@@ -1,0 +1,55 @@
+PS C:\QA\Proyecto2\practice-software-testing\sprint5-with-bugs\UI> Get-ChildItem .\src -Recurse -Filter *.spec.ts |
+  Select-String -Pattern 'it\(|getTotal|updateQuantity' -Context 0,5
+
+> src\app\checkout\checkout.component.spec.ts:40:  it('getTotal devuelve 0 cuando los productos son null', () => {
+  src\app\checkout\checkout.component.spec.ts:41:    cartService.getItems.and.returnValue(null as any);
+  src\app\checkout\checkout.component.spec.ts:42:
+> src\app\checkout\checkout.component.spec.ts:43:    expect((component as any).getTotal()).toBe(0);
+  src\app\checkout\checkout.component.spec.ts:44:  });
+  src\app\checkout\checkout.component.spec.ts:45:
+> src\app\checkout\checkout.component.spec.ts:46:  it('getTotal devuelve 0 cuando el carrito está vacío', () => {
+  src\app\checkout\checkout.component.spec.ts:47:    cartService.getItems.and.returnValue([]);
+  src\app\checkout\checkout.component.spec.ts:48:
+> src\app\checkout\checkout.component.spec.ts:49:    expect((component as any).getTotal()).toBe(0);
+  src\app\checkout\checkout.component.spec.ts:50:  });
+  src\app\checkout\checkout.component.spec.ts:51:
+> src\app\checkout\checkout.component.spec.ts:52:  it('getTotal suma los totales de los productos', () => {
+  src\app\checkout\checkout.component.spec.ts:53:    cartService.getItems.and.returnValue([
+  src\app\checkout\checkout.component.spec.ts:54:      { total: 10.25 },
+  src\app\checkout\checkout.component.spec.ts:55:      { total: 4.50 }
+  src\app\checkout\checkout.component.spec.ts:56:    ] as any);
+  src\app\checkout\checkout.component.spec.ts:57:
+> src\app\checkout\checkout.component.spec.ts:58:    expect((component as any).getTotal()).toBe(14.75);
+  src\app\checkout\checkout.component.spec.ts:59:  });
+  src\app\checkout\checkout.component.spec.ts:60:
+> src\app\checkout\checkout.component.spec.ts:61:  it('updateQuantity acepta una cantidad de hasta 10', () => {
+  src\app\checkout\checkout.component.spec.ts:62:    cartService.getItems.and.returnValue([{ total: 20 }] as any);
+  src\app\checkout\checkout.component.spec.ts:63:    const item = { id: 7 };
+  src\app\checkout\checkout.component.spec.ts:64:    const event = { target: { value: '5' } } as any;
+  src\app\checkout\checkout.component.spec.ts:65:
+> src\app\checkout\checkout.component.spec.ts:66:    component.updateQuantity(event, item);
+  src\app\checkout\checkout.component.spec.ts:67:
+  src\app\checkout\checkout.component.spec.ts:68:    expect(cartService.replaceQuantity).toHaveBeenCalledWith(7, 5);
+  src\app\checkout\checkout.component.spec.ts:69:    expect(component.total).toBe(20);
+  src\app\checkout\checkout.component.spec.ts:70:  });
+  src\app\checkout\checkout.component.spec.ts:71:
+> src\app\checkout\checkout.component.spec.ts:72:  it('updateQuantity limita a 10 una cantidad mayor', () => {
+  src\app\checkout\checkout.component.spec.ts:73:    cartService.getItems.and.returnValue([{ total: 20 }] as any);
+  src\app\checkout\checkout.component.spec.ts:74:    const item = { id: 7 };
+  src\app\checkout\checkout.component.spec.ts:75:    const event = { target: { value: '11' } } as any;
+  src\app\checkout\checkout.component.spec.ts:76:
+> src\app\checkout\checkout.component.spec.ts:77:    component.updateQuantity(event, item);
+  src\app\checkout\checkout.component.spec.ts:78:
+  src\app\checkout\checkout.component.spec.ts:79:    expect(cartService.replaceQuantity).toHaveBeenCalledWith(7, 10);
+  src\app\checkout\checkout.component.spec.ts:80:  });
+  src\app\checkout\checkout.component.spec.ts:81:
+> src\app\checkout\checkout.component.spec.ts:82:  it('updateQuantity ignora una cantidad negativa', () => {
+  src\app\checkout\checkout.component.spec.ts:83:    const item = { id: 7 };
+  src\app\checkout\checkout.component.spec.ts:84:    const event = { target: { value: '-1' } } as any;
+  src\app\checkout\checkout.component.spec.ts:85:
+> src\app\checkout\checkout.component.spec.ts:86:    component.updateQuantity(event, item);
+  src\app\checkout\checkout.component.spec.ts:87:
+  src\app\checkout\checkout.component.spec.ts:88:    expect(cartService.replaceQuantity).not.toHaveBeenCalled();
+  src\app\checkout\checkout.component.spec.ts:89:  });
+  src\app\checkout\checkout.component.spec.ts:90:});
+
